@@ -1,51 +1,74 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>お問い合わせページ</title>
-  <style type="text/css">
-  </style>
-  <script src="https://sdk.form.run/js/v2/formrun.js"></script>  
-</head>
-<body>
-  <h1>お問い合わせ</h1>
-  <p>CRAFT11宛てにお問い合わせメッセージが届きます。内容によっては返信できない場合もございますので、ご了承ください。</p>
-  <p>プライバシーポリシー</p>
-  <p>当お問い合わせフォームより取得させていただいた個人情報は、頂いたご質問に対する回答を、質問者様に電子メールでご連絡する場合にのみ利用いたします。これ以外の目的では利用いたしません。</p>
-  <!-- class, action, methodを変更しないでください -->
-  <form class="formrun" action="https://form.run/api/v1/r/ycvs5pogkgb296mnppfu9uvx" method="post">
-    <!-- ↓自由に要素を追加・編集することができます -->
-    <div>
-      <label>お名前</label>
-      <input name="お名前" type="text">
-    </div>
+  <head>
+  	<meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  	<title>お問い合わせページ | CRAFT11 Official Website</title>
+    <style type="text/css">
+    </style>
+    <script src="https://sdk.form.run/js/v2/formrun.js"></script>  
+  </head>
+  <body>
+    <header>
+      <div class="header-wrapper">        
+        <a href="https://craft11n.github.io/">
+          <img src="icon.png">
+          <span class="logo">CRAFT11</span>
+        </a>
+      </div>
+    </header>
+    <div class="breadcrumbs"><a href="https://craft11n.github.io/">ホーム</a>＞お問い合わせページ</div> 
+    <div class="main-wrapper">      
+      <h1>お問い合わせページ</h1>
+      <h2>お問い合わせの前に</h2>
+        <p>CRAFT11の楽曲利用に関するガイドラインは、<a href="https://craft11n.github.io/terms">作品の二次使用に関するガイドライン</a>のページに掲載しています。楽曲の利用許諾についてお問い合わせ予定の方は、事前にご一読ください。</p>
+        <p>当ページ末尾のフォームより、CRAFT11宛てにお問い合わせメッセージをお送りいただくことができます。ただし、内容によってはご返信できない場合もございますので、ご了承ください。</p>
+      <h2>プライバシーポリシー</h2>
+        <h3>個人情報の利用目的</h3>
+          <p>お問い合わせいただく際には、お名前（ハンドルネーム）やメールアドレス等の個人情報をご入力いただきます。取得した個人情報は、頂いたご質問に対する回答を、質問者様に電子メールでご連絡する場合にのみ利用いたします。これ以外の目的では利用いたしません。</p>
+        <h3>個人情報の第三者への開示</h3>
+          <p>個人情報は適切に管理し、法令に基づいた開示が認められる場合を除き、ご本人様の同意を得ずに第三者に提供することはありません。</p>
+      <h2>お問い合せフォーム</h2>
+        <p>以下のフォームよりお問い合わせください。</p>
+      <!-- class, action, methodを変更しないでください -->
+      <form class="formrun" action="https://form.run/api/v1/r/ycvs5pogkgb296mnppfu9uvx" method="post">
+        <!-- ↓自由に要素を追加・編集することができます -->
+        <div class="form-wrapper">
+          <label class="form-label">お名前（ハンドルネーム可）<span class="must">必須</span></label>
+          <input name="お名前" type="text"data-formrun-required class="input-text shadow formbasic form-width">
+          <div data-formrun-show-if-error="お名前">お名前を入力してください</div>
+        </div>
 
-    <div>
-      <label>メールアドレス（必須）</label>
-      <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required>
-      <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
-    </div>
+        <div class="form-wrapper">
+          <label class="form-label">メールアドレス<span class="must">必須</span></label>
+          <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required class="shadow form-width formbasic">
+          <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+        </div>
 
-    <div>
-      <label>お問い合わせ内容（必須）</label>
-      <textarea name="お問い合わせ" data-formrun-required></textarea>
-      <div data-formrun-show-if-error="お問い合わせ">お問い合わせ入力してください</div>
-    </div>
+        <div class="form-wrapper">
+          <label class="form-label">お問い合わせ内容<span class="must">必須</span></label>
+          <textarea name="お問い合わせ" data-formrun-required class="formbasic form-width text-region"></textarea>
+          <div data-formrun-show-if-error="お問い合わせ">お問い合わせ内容を入力してください</div>
+        </div>
 
-    <div>
-      <label>プライバシーポリシーに同意する（必須）</label>
-      <input type="checkbox" name="個人情報利用同意" data-formrun-required>
-      <div data-formrun-show-if-error="個人情報利用同意">同意してください</div>
-    </div>
+        <div class="form-wrapper">         
+          <input type="checkbox" name="個人情報利用同意" data-formrun-required class="privacy-check">
+          <label class="privacy-label">プライバシーポリシーに同意する<span class="must">必須</span></label>
+          <div data-formrun-show-if-error="個人情報利用同意">同意してください</div>
+        </div>
 
-    <!-- ボット投稿をブロックするためのタグ -->
-    <div class="_formrun_gotcha">
-      <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
-      <label for="_formrun_gotcha">If you are a human, ignore this field</label>
-      <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
-    </div>
+        <!-- ボット投稿をブロックするためのタグ -->
+        <div class="_formrun_gotcha">
+          <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
+          <label for="_formrun_gotcha">If you are a human, ignore this field</label>
+          <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
+        </div>
 
-    <button type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信</button>
-  </form>
-</body>
+        <button type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信</button>
+      </form>
+    </div>
+    <footer>
+      <div class="footer-wrapper"><a href="https://craft11n.github.io/">ホームページへ</a></div>
+    </footer>    
+  </body>
 </html>
