@@ -87,7 +87,7 @@ header img {
   box-sizing: border-box; /* これがないとレスポンシブ時にはみ出るので注意 */
   max-width: 810px;
   padding: 10px 40px;
-  margin: 0 auto 10px;
+  margin: 0 auto;
   background: #ffffff;
 }
 
