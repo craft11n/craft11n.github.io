@@ -306,7 +306,7 @@ button, input, select, textarea {
 
 /* お問い合わせ内容の領域を広げる */
 .text-region {
-   padding: 5px 6px 95px;
+   padding: 10px 10px 170px;
 }
 
 /* フォームにフォーカス時に青い枠をつける */
