@@ -306,14 +306,13 @@ button, input, select, textarea {
 
 /* お問い合わせ内容の領域を広げる */
 .text-region {
-   padding: 100px 6px;
+   padding: 5px 6px 95px;
 }
 
 /* フォームにフォーカス時に青い枠をつける */
 .formbasic:focus {
   box-shadow: 0 0 0 2px rgb(66 153 225 / 50%);
 }
-
 
 /* 入力項目の見出しのデザイン */
 .form-label {
@@ -337,19 +336,6 @@ button, input, select, textarea {
   padding: 2px 7px 0 7px;
   margin: 0 11px;
   border-radius: 8px;
-}
-
-
-
-/* 未記入時のエラー */
-.formrun-system-show {
-  font-size: 0.8em;
-  color: #ea677f;
-}
-
-/* 未記入項目時に付加されるclassを利用して枠線の色を赤色に */
-.formrun-has-error {
-  border-color: #fb91a4!important;
 }
 
 
@@ -386,4 +372,16 @@ button, input, select, textarea {
 .formrun button:hover {
   cursor: pointer;
   background-color: #619da2;
+}
+
+
+/* 未記入時のエラー */
+.formrun-system-show {
+  font-size: 0.8em;
+  color: #ea677f;
+}
+
+/* 未記入項目時に付加されるclassを利用して枠線の色を赤色に */
+.formrun-has-error {
+  border-color: #fb91a4!important;
 }
