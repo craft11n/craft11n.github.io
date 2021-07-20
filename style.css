@@ -42,6 +42,7 @@ header img {
 }
 
 .header-wrapper {
+  box-sizing: border-box; /* これがないとレスポンシブ時にはみ出るので注意 */
   font-size: 1.3em;
   padding: 4px 20px 10px 0;
   width: 925px;
@@ -64,6 +65,7 @@ header img {
 
 /* パンくずリスト周り */
 .breadcrumbs {
+  box-sizing: border-box;  
   font-weight: bold;
   color: #7a9092;
   max-width: 810px;  
@@ -98,6 +100,7 @@ footer {
 }
 
 .footer-wrapper {
+  box-sizing: border-box; /* これがないとレスポンシブ時にはみ出るので注意 */
   text-align: center;
   color: #ffffff;
   font-size: 1.3em;
@@ -256,7 +259,7 @@ p.ans::before {
 /* 背景のスクロール調整 */
 @media screen and (max-width: 900px) {
   .main-wrapper, .header-wrapper, .footer-wrapper, .breadcrumbs {
-    width: 90%;
+    width: 100%;
   }
 }
 
