@@ -241,22 +241,26 @@ p.ans::before {
 }
 
 
-  /* マウスホバー関連はPCオンリー */
+/* PC閲覧時のみマウスホバーを有効に */
 @media screen and (min-width: 768px) {
   a:hover{
     text-decoration: none;
   }
+  /* ヘッダのリンク */
+  .header-wrapper a:hover {
+    color: #ffeded;
+  }
+  /* パンくずリストのリンク */
   .breadcrumbs a:hover {
     color: #7a9092;
     text-decoration: underline;
   }
+  /* フッタのリンク */
   .footer-wrapper a:hover {
-    color: #2b8792;
+    color: #439aa5;
   }
-  .header-wrapper a:hover {
-    color: #ffe8e8;
-  }  
-  /* 送信ボタンホバー時のデザイン */
+
+  /* お問い合わせフォーム・送信ボタン ホバー時 */
   .formrun button:hover {
     cursor: pointer;
     background-color: #619da2;
@@ -363,6 +367,7 @@ button, input, select, textarea {
   margin: 0;
   top: 2px;
   position: relative;
+  transform:scale(1.3)
 }
 
 /* 送信ボタンのデザイン  */
