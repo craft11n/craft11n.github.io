@@ -352,14 +352,18 @@ button, input, select, textarea {
   border-radius: 8px;
 }
 
+.flexer {
+  display: flex;
+}
 
 /* プライバシーポリシー用のラベル用class */
 .privacy-label {
+  flex: 1;
   color: gray;
   font-size: 0.8em;
   font-weight: bold;
   display: inline-block;
-  margin: 0 0 0 2px;
+  margin: 0 0 0 10px;
 }
 
 /*プライバシーポリシーのチェックボックスのcss*/
