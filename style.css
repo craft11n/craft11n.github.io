@@ -74,7 +74,7 @@ header img {
 .main-wrapper {
   box-sizing: border-box; /* これがないとレスポンシブ時にはみ出るので注意 */
   max-width: 810px;
-  padding: 10px 40px;
+  padding: 20px 40px 40px;
   margin: 0 auto;
   background: #ffffff;
 }
@@ -313,7 +313,7 @@ button, input, select, textarea {
   padding: 10px 30px 50px;
   border: dotted 1px gray;
   border-radius: 4px;
-  margin: 40px 0 70px 0;
+  margin: 40px 0;
 }
 
 
