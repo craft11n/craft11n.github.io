@@ -380,7 +380,7 @@ button, input, select, textarea {
   font-weight: bold;
   display: inline-block;
   margin: 0 0 0 18px;
-  min-width: 90%; /* 未入力エラー時のポップアップを下に追いやるための記述 */
+  min-width: 70%; /* 未入力エラー時のポップアップを下に追いやるための記述 */
 }
 
 .privacy-label a {
