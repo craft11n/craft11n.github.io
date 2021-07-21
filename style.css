@@ -369,6 +369,7 @@ button, input, select, textarea {
 
 .flexer {
   display: flex;
+  flex-wrap: wrap; /* 未入力エラー時のポップアップを下に追いやるための記述 */
 }
 
 /* プライバシーポリシー用のラベル用class */
@@ -379,6 +380,7 @@ button, input, select, textarea {
   font-weight: bold;
   display: inline-block;
   margin: 0 0 0 10px;
+  min-width: 70%; /* 未入力エラー時のポップアップを下に追いやるための記述 */
 }
 
 .privacy-label a {
