@@ -279,7 +279,6 @@ p.ans::before {
   /* お問い合わせフォーム・送信ボタン ホバー時 */
   .formrun button:hover {
     cursor: pointer;
-    background-color: #619da2;
   }  
 }
 
@@ -404,8 +403,16 @@ button, input, select, textarea {
   font-size: 1em;
   font-weight: bold;
   border-radius: 6px;
+  box-shadow: #ababab9e 2px 2px 4px;
 }
 
+/* 送信ボタンを押した際のアクション */
+.formrun button:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);　/*下に動く*/
+  box-shadow: none;　/*影を消す*/
+}
 
 
 
