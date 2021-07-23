@@ -413,7 +413,6 @@ button, input, select, textarea {
   -webkit-transform: translateY(2px);
   transform: translateY(2px); /*下に動く*/
   box-shadow: none; /* 影を消す */
-  -webkit-tap-highlight-color: transparent; /* iPhoneのSafariでタップした時の影を消す */  
 }
 
 /* フォームに未記入項目がある際のエラー */
