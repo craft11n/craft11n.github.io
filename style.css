@@ -408,10 +408,11 @@ button, input, select, textarea {
 }
 
 /* 送信ボタンを押した際のアクション */
-.formrun button:active { 
+.formrun button:active {
   -webkit-transform: translateY(2px);
   transform: translateY(2px); /*下に動く*/
-  box-shadow: none;
+  box-shadow: none; /* 影を消す */
+  -webkit-tap-highlight-color: transparent; /* iPhoneのSafariでタップした時の影を消す */  
 }
 
 /* フォームに未記入項目がある際のエラー */
