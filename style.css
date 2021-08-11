@@ -231,9 +231,62 @@ p.ans::before {
     background: #f59e9e;   
 }
 
+
+
+
+/**********************/
+
+/* 5. Specialページの設定
+
+***********************/
+
+
+/* flex化するための親要素div */
+.dl-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* 曲タイトル＆DLボタンの1セット */
+.dlbox {  
+  box-sizing: border-box;
+  width: 25%;
+  padding: 0 10px;
+  margin: 1em 0 2.5em;
+  text-align: center; /* 子要素を中央寄せ */
+}
+
+/* スマホ表示時は2列に */
+@media screen and (max-width: 767px) {
+  .dlbox {
+    width: 50%;
+  }
+}
+
+/* 曲タイトル */
+.ttl {
+    font-size: 1.2em;
+    margin-bottom: 0.7em;
+    color: #7e8384;
+}
+
+/* Downloadボタン */
+.dl-btn {
+    margin: 0 auto;
+    display: inline-block;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: white;
+    background: #6f9a9e;
+    border-radius: 4px;
+    padding: 6px 10px 4px;
+}
+
+
 /******************/
 
-/* 5. レスポンシブ設定
+/* 6. レスポンシブ設定
 
 *******************/
 
@@ -292,7 +345,7 @@ p.ans::before {
 
 /******************/
 
-/* 6. お問合せフォーム
+/* 7. お問合せフォーム
 
 *******************/
 
